@@ -35,8 +35,6 @@ strong { color: var(--ink); font-weight: 600; }
 .profile-cover { height: 112px; background: #dbe7ef; overflow: hidden; position: relative; }
 .cover-art { height: 100%; width: 100%; display: block; }
 .profile-body { padding: 0 26px 24px; }
-.profile-topline { display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; position: relative; margin-top: -38px; }
-.avatar { height: 84px; width: 84px; border: 4px solid white; border-radius: 50%; background: #edf4f8; color: #436377; display: grid; place-items: center; font-size: 31px; font-weight: 500; flex: none; box-shadow: 0 0 0 1px #dbe2e7; }
 .affiliation { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 13px; color: var(--text); }
 .affiliation .icon { width: 18px; height: 18px; color: #6f7f89; }
 .profile-name { font-size: 28px; line-height: 1.4; font-weight: 600; letter-spacing: .025em; margin-top: 11px; }
@@ -114,8 +112,6 @@ strong { color: var(--ink); font-weight: 600; }
   .card { border-radius: 8px; }
   .profile-cover { height: 91px; }
   .profile-body { padding: 0 18px 20px; }
-  .profile-topline { margin-top: -32px; gap: 12px; }
-  .avatar { width: 73px; height: 73px; font-size: 28px; }
   .affiliation { font-size: 12px; gap: 5px; }
   .affiliation .icon { width: 16px; height: 16px; }
   .profile-name { font-size: 26px; margin-top: 8px; }
@@ -154,7 +150,7 @@ strong { color: var(--ink); font-weight: 600; }
 @media print {
   html { scroll-behavior: auto; }
   body { background: white; color: #25292d; font-size: 9.5pt; line-height: 1.6; }
-  .side-column,.page-footer,.profile-cover,.profile-topline { display: none !important; }
+  .side-column,.page-footer,.profile-cover,.affiliation { display: none !important; }
   .layout,.main-column { display: block; max-width: none; margin: 0; padding: 0; }
   .card { border: 0; border-radius: 0; overflow: visible; }
   .profile-body { padding: 0 0 5mm; border-bottom: 1px solid #b9cddd; }
@@ -186,6 +182,8 @@ strong { color: var(--ink); font-weight: 600; }
 
 [hidden] { display: none !important; }
 .profile-card { position: relative; }
+.profile-topline { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 3px 16px; padding-top: 16px; }
+.profile-topline .profile-name, .profile-topline .affiliation { margin: 0; }
 .language-switch { position: absolute; top: 15px; right: 18px; display: flex; gap: 3px; padding: 3px; background: #f9fcff; border: 1px solid #a8c2d5; border-radius: 7px; }
 .language-switch button { appearance: none; border: 0; border-radius: 4px; background: transparent; color: #405973; cursor: pointer; font: 600 12px/1.4 var(--font); padding: 7px 11px; }
 .language-switch button[aria-pressed="true"] { background: var(--blue); color: white; }
@@ -223,6 +221,7 @@ strong { color: var(--ink); font-weight: 600; }
   .personal-details { grid-template-columns: minmax(0, 1fr); }
 }
 @media print {
+  .profile-topline { display: block; padding-top: 0; }
   .language-switch,.profile-links { display: none !important; }
   .timeline { margin-top: 3mm; }
   .timeline-item { grid-template-columns: 29mm minmax(0, 1fr); gap: 3mm; padding: 0 0 3.5mm 5mm; }
@@ -251,10 +250,9 @@ strong { color: var(--ink); font-weight: 600; }
   </div>
   <div class="profile-body">
     <div class="profile-topline">
-      <div class="avatar" aria-hidden="true">王嘉</div>
+      <h1 class="profile-name" id="zh-name">王嘉</h1>
       <div class="affiliation"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8 9-5 9 5-9 5-9-5Z"/><path d="M6 10v7c4 3 8 3 12 0v-7M21 8v8"/></svg><span>中南大学 · 985高校</span></div>
     </div>
-    <h1 class="profile-name" id="zh-name">王嘉</h1>
     <p class="headline">数据分析 · 风控策略 · 工程实践</p>
     <p class="profile-background"><strong>腾讯 · 华为</strong></p>
     <p class="print-education">中南大学 · 985高校 · 数学与应用数学专业 · 学士学位</p>
@@ -444,10 +442,9 @@ strong { color: var(--ink); font-weight: 600; }
   </div>
   <div class="profile-body">
     <div class="profile-topline">
-      <div class="avatar" aria-hidden="true">JW</div>
+      <h1 class="profile-name" id="en-name">Jia Wang</h1>
       <div class="affiliation"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8 9-5 9 5-9 5-9-5Z"/><path d="M6 10v7c4 3 8 3 12 0v-7M21 8v8"/></svg><span>Central South University · Project 985</span></div>
     </div>
-    <h1 class="profile-name" id="en-name">Jia Wang</h1>
     <p class="headline">Data analysis · Risk strategy · Engineering delivery</p>
     <p class="profile-background"><strong>Tencent · Huawei</strong></p>
     <p class="print-education">Central South University · Project 985 · Bachelor’s degree in Mathematics and Applied Mathematics</p>
