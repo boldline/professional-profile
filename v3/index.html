@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a66c2">
+<meta name="description" content="王嘉的专业能力与工作经历，涵盖数据分析、风控策略和工程实践，支持中英文切换。">
+<title>王嘉 · 专业能力与工作经历</title>
+<style>
+:root {
+  color-scheme: light;
+  --blue: #0a66c2;
+  --ink: #25292d;
+  --text: #42474d;
+  --muted: #66717a;
+  --line: #e0e3e6;
+  --canvas: #f3f2ef;
+  --font: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--canvas); color: var(--ink); font: 14px/1.7 var(--font); -webkit-font-smoothing: antialiased; }
+h1,h2,h3,p,ul { margin: 0; }
+ul { padding: 0; list-style: none; }
+a { color: inherit; text-decoration: none; }
+a { -webkit-tap-highlight-color: transparent; }
+a:focus-visible { outline: 3px solid #78aee1; outline-offset: 4px; }
+::selection { background: #d8eaff; }
+strong { color: var(--ink); font-weight: 600; }
+.icon { display: block; width: 20px; height: 20px; flex: none; }
+.layout { max-width: 1140px; margin: 24px auto 0; padding: 0 20px; display: grid; grid-template-columns: minmax(0, 1fr) 230px; align-items: start; gap: 20px; }
+.main-column { min-width: 0; display: grid; gap: 16px; }
+.side-column { display: grid; gap: 16px; min-width: 0; }
+.card { background: white; border: 1px solid #dededb; border-radius: 10px; overflow: hidden; }
+.profile-cover { height: 112px; background: #dbe7ef; overflow: hidden; position: relative; }
+.cover-art { height: 100%; width: 100%; display: block; }
+.profile-body { padding: 0 26px 24px; }
+.profile-topline { display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; position: relative; margin-top: -38px; }
+.avatar { height: 84px; width: 84px; border: 4px solid white; border-radius: 50%; background: #edf4f8; color: #436377; display: grid; place-items: center; font-size: 31px; font-weight: 500; flex: none; box-shadow: 0 0 0 1px #dbe2e7; }
+.affiliation { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 13px; color: var(--text); }
+.affiliation .icon { width: 18px; height: 18px; color: #6f7f89; }
+.profile-name { font-size: 28px; line-height: 1.4; font-weight: 600; letter-spacing: .025em; margin-top: 11px; }
+.headline { font-size: 16px; color: #323a41; line-height: 1.6; margin-top: 3px; }
+.profile-background { display: flex; align-items: center; flex-wrap: wrap; gap: 7px 12px; margin-top: 9px; color: var(--muted); font-size: 13px; }
+.profile-background strong { color: var(--blue); font-weight: 500; }
+.profile-background .dot { width: 3px; height: 3px; border-radius: 50%; background: #a0a7ad; }
+.profile-intro { margin-top: 14px; color: var(--text); font-size: 14px; line-height: 1.75; }
+.print-education { display: none; }
+.experience-card,.capability,.personal-card { padding: 20px 24px; }
+.section-heading { display: flex; align-items: center; gap: 9px; }
+.section-heading h2 { font-size: 19px; line-height: 1.5; font-weight: 600; letter-spacing: .015em; }
+.section-icon { color: var(--blue); display: flex; align-items: center; }
+.section-icon .icon { width: 20px; height: 20px; }
+.section-intro { color: var(--muted); margin: 7px 0 15px; line-height: 1.65; font-size: 14px; }
+.projects { border-top: 1px solid var(--line); }
+.project { padding: 16px 0; break-inside: avoid; }
+.project:last-child { padding-bottom: 0; }
+.project + .project { border-top: 1px solid var(--line); }
+.project-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 8px 14px; margin-bottom: 8px; flex-wrap: wrap; }
+.project h3 { font-size: 16px; line-height: 1.55; font-weight: 600; text-wrap: balance; }
+.project-org { color: var(--muted); font-size: 12px; line-height: 1.6; }
+.contribution { color: var(--text); font-size: 14px; line-height: 1.7; margin-bottom: 6px; }
+.inline-label { color: #64788a; font-size: 12px; white-space: nowrap; margin-right: 9px; }
+.work { display: grid; gap: 4px; color: var(--text); font-size: 14px; line-height: 1.72; }
+.work li { padding-left: 13px; position: relative; }
+.work li::before { content: ""; position: absolute; top: .8em; left: 1px; width: 4px; height: 4px; border-radius: 50%; background: #8c9ba7; }
+.evidence { display: grid; grid-template-columns: 54px minmax(0,1fr); align-items: baseline; gap: 10px; padding: 8px 11px; margin-top: 10px; background: #f4f8fb; border-radius: 5px; border-left: 2px solid #a2c5e4; font-size: 14px; line-height: 1.65; }
+.evidence-label { font-size: 12px; color: #557085; }
+.evidence strong { color: #075fae; }
+.side-card { padding: 20px; }
+.side-card h2 { font-size: 17px; line-height: 1.5; font-weight: 600; }
+.education-identity { display: flex; align-items: center; gap: 11px; margin-top: 18px; }
+.school-icon { display: grid; place-items: center; width: 41px; height: 41px; background: #ecf3f9; color: var(--blue); border-radius: 7px; flex: none; }
+.school-icon .icon { width: 25px; height: 25px; }
+.school-name { font-size: 19px; font-weight: 600; line-height: 1.5; }
+.school-badge { font-size: 11px; font-weight: 500; color: var(--blue); display: inline-block; margin-top: 3px; line-height: 1.6; }
+.school-major { color: var(--text); font-size: 14px; margin-top: 14px; }
+.school-degree { color: var(--muted); font-size: 13px; margin-top: 3px; }
+.proof-item { padding: 15px 0; }
+.proof-item:last-child { padding-bottom: 0; }
+.proof-item + .proof-item { border-top: 1px solid var(--line); }
+.proof-value { color: var(--blue); font-size: 27px; line-height: 1.4; font-weight: 600; font-variant-numeric: tabular-nums; }
+.proof-description { margin-top: 3px; font-size: 13px; line-height: 1.65; color: var(--text); }
+.proof-context { display: block; color: var(--muted); font-size: 12px; margin-top: 4px; }
+.skill-group { margin-top: 16px; }
+.skill-group h3 { font-size: 13px; color: var(--muted); font-weight: 500; margin-bottom: 8px; }
+.skills { display: flex; flex-wrap: wrap; gap: 7px; }
+.skills li { padding: 3px 9px; border-radius: 4px; border: 1px solid #e0e6eb; background: #fafbfc; color: #4e6375; font-size: 12px; line-height: 1.65; }
+.page-footer { max-width: 1140px; margin: 0 auto; padding: 24px 20px 30px; display: flex; align-items: center; justify-content: space-between; gap: 15px; color: var(--muted); font-size: 12px; }
+.back-top { color: #4f6c85; display: inline-flex; gap: 5px; align-items: center; min-height: 32px; }
+.back-top .icon { width: 14px; height: 14px; }
+@media (max-width: 1000px) {
+  .layout { grid-template-columns: minmax(0,1fr) 200px; gap: 16px; }
+  .side-card { padding: 18px; }
+  .experience-card,.capability,.personal-card { padding: 18px 20px; }
+  .profile-body { padding: 0 22px 22px; }
+  .project-heading { display: block; }
+  .project-org { margin-top: 3px; }
+}
+@media (max-width: 800px) {
+  .layout { display: flex; flex-direction: column; max-width: 760px; margin-top: 16px; padding: 0 16px; }
+  .main-column,.side-column { width: 100%; }
+  .side-column { grid-template-columns: 1fr 1fr; }
+  .education-card { grid-column: 1 / -1; }
+  .education-card .education-details { display: flex; align-items: center; gap: 24px; }
+  .education-identity { margin-top: 12px; }
+  .school-major { margin-top: 10px; }
+  .project-heading { display: flex; }
+  .project-org { margin-top: 0; }
+}
+@media (max-width: 540px) {
+  .layout { padding: 0 10px; margin-top: 12px; gap: 12px; }
+  .main-column,.side-column { gap: 12px; }
+  .card { border-radius: 8px; }
+  .profile-cover { height: 91px; }
+  .profile-body { padding: 0 18px 20px; }
+  .profile-topline { margin-top: -32px; gap: 12px; }
+  .avatar { width: 73px; height: 73px; font-size: 28px; }
+  .affiliation { font-size: 12px; gap: 5px; }
+  .affiliation .icon { width: 16px; height: 16px; }
+  .profile-name { font-size: 26px; margin-top: 8px; }
+  .headline { font-size: 15px; }
+  .profile-background { font-size: 12px; gap: 5px 9px; }
+  .profile-intro { margin-top: 12px; }
+  .experience-card,.capability,.personal-card { padding: 18px 17px; }
+  .section-heading h2 { font-size: 18px; }
+  .section-heading { gap: 8px; }
+  .project-heading { display: block; margin-bottom: 7px; }
+  .project-org { margin-top: 3px; }
+  .project { padding: 14px 0; }
+  .project h3 { font-size: 16px; }
+  .evidence { grid-template-columns: 1fr; gap: 2px; padding: 8px 10px; }
+  .evidence-label { font-size: 12px; }
+  .side-column { grid-template-columns: 1fr; }
+  .education-card .education-details { display: block; }
+  .school-major { margin-top: 12px; }
+  .side-card { padding: 18px; }
+  .proof-items { display: grid; grid-template-columns: 1fr; }
+  .proof-item { display: grid; grid-template-columns: 88px 1fr; align-items: start; gap: 12px; padding: 13px 0; }
+  .proof-description { margin-top: 0; }
+  .proof-value { font-size: 24px; }
+  .page-footer { padding: 16px 20px 24px; font-size: 11px; }
+}
+@media (max-width: 360px) {
+  .profile-body { padding-left: 15px; padding-right: 15px; }
+  .experience-card,.capability,.personal-card { padding-left: 14px; padding-right: 14px; }
+  .profile-background { gap: 5px 7px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
+@page { size: A4; margin: 14mm 15mm; }
+@media print {
+  html { scroll-behavior: auto; }
+  body { background: white; color: #25292d; font-size: 9.5pt; line-height: 1.6; }
+  .side-column,.page-footer,.profile-cover,.profile-topline { display: none !important; }
+  .layout,.main-column { display: block; max-width: none; margin: 0; padding: 0; }
+  .card { border: 0; border-radius: 0; overflow: visible; }
+  .profile-body { padding: 0 0 5mm; border-bottom: 1px solid #b9cddd; }
+  .profile-name { font-size: 22pt; margin: 0; }
+  .headline { font-size: 11pt; margin-top: 1mm; }
+  .profile-background { display: none; }
+  .profile-intro { font-size: 9.5pt; line-height: 1.65; margin-top: 2.5mm; }
+  .print-education { display: block; color: #46647d; font-size: 9pt; margin-top: 2mm; }
+  .experience-card,.capability,.personal-card { padding: 5mm 0 0; }
+  .section-heading { gap: 2mm; }
+  .section-heading h2 { font-size: 13pt; }
+  .section-icon .icon { width: 14pt; height: 14pt; }
+  .section-intro { font-size: 9.5pt; line-height: 1.6; margin: 1.5mm 0 3mm; }
+  .project { padding: 3mm 0; }
+  .project-heading { display: flex; gap: 3mm; margin-bottom: 1.5mm; }
+  .project h3 { font-size: 10.5pt; }
+  .project-org { font-size: 8pt; margin-top: 0; }
+  .contribution { font-size: 9.5pt; line-height: 1.6; margin-bottom: 1mm; }
+  .inline-label { font-size: 8pt; margin-right: 2mm; }
+  .work { font-size: 9.5pt; line-height: 1.6; gap: 1mm; }
+  .work li { padding-left: 2.8mm; }
+  .work li::before { width: 2px; height: 2px; }
+  .evidence { grid-template-columns: 14mm minmax(0,1fr); gap: 2mm; font-size: 9.5pt; line-height: 1.6; padding: 1.8mm 2.5mm; margin-top: 2mm; border-radius: 1mm; }
+  .evidence-label { font-size: 8pt; }
+  h1,h2,h3 { break-after: avoid; }
+  p,li { orphans: 2; widows: 2; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+[hidden] { display: none !important; }
+.profile-card { position: relative; }
+.language-switch { position: absolute; top: 15px; right: 18px; display: flex; gap: 3px; padding: 3px; background: #f9fcff; border: 1px solid #a8c2d5; border-radius: 7px; }
+.language-switch button { appearance: none; border: 0; border-radius: 4px; background: transparent; color: #405973; cursor: pointer; font: 600 12px/1.4 var(--font); padding: 7px 11px; }
+.language-switch button[aria-pressed="true"] { background: var(--blue); color: white; }
+.language-switch button:focus-visible { outline: 2px solid #173d66; outline-offset: 2px; }
+.profile-links { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 11px; }
+.profile-links a { color: #075fae; font-size: 13px; font-weight: 600; }
+.profile-links a:hover { text-decoration: underline; }
+.personal-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px 18px; margin: 12px 0 0; }
+.personal-details > div { display: flex; align-items: baseline; gap: 6px; }
+.personal-details dt { flex: none; color: var(--muted); font-size: 12px; }
+.personal-details dd { min-width: 0; margin: 0; color: var(--text); overflow-wrap: anywhere; }
+.personal-details a { color: #075fae; }
+.personal-details a:hover { text-decoration: underline; }
+.timeline { list-style: none; padding: 0; margin: 18px 0 0; }
+.timeline-item { display: grid; grid-template-columns: 113px minmax(0, 1fr); gap: 14px; position: relative; padding: 0 0 22px 22px; break-inside: avoid; }
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-item:not(:last-child)::before { content: ""; position: absolute; top: 9px; bottom: -9px; left: 4px; width: 1px; background: #bdd1e1; }
+.timeline-item::after { content: ""; position: absolute; left: 0; top: 5px; width: 9px; height: 9px; border: 2px solid #6196bf; background: #fff; border-radius: 50%; }
+.timeline-item:first-child::after { background: var(--blue); border-color: var(--blue); }
+.timeline-date { color: #496783; font-size: 12px; line-height: 1.55; font-weight: 600; font-variant-numeric: tabular-nums; padding-top: 1px; }
+.timeline-company { font-size: 16px; font-weight: 600; line-height: 1.45; }
+.timeline-role { color: var(--muted); font-size: 13px; margin: 3px 0 6px; }
+.work strong { color: #344d63; }
+.education-period { color: var(--muted); font-size: 12px; margin-top: 4px; }
+[lang="en"] .affiliation { min-width: 0; }
+[lang="en"] .school-name { font-size: 17px; }
+[lang="en"] .proof-value { font-size: 24px; }
+[lang="en"] .timeline-date { white-space: nowrap; }
+@media (max-width: 540px) {
+  .language-switch { top: 10px; right: 12px; }
+  .personal-details { gap: 10px 14px; }
+  .timeline-item { grid-template-columns: minmax(0, 1fr); gap: 4px; padding-left: 19px; padding-bottom: 18px; }
+}
+@media screen and (max-width: 480px) {
+  .personal-details { grid-template-columns: minmax(0, 1fr); }
+}
+@media print {
+  .language-switch,.profile-links { display: none !important; }
+  .timeline { margin-top: 3mm; }
+  .timeline-item { grid-template-columns: 29mm minmax(0, 1fr); gap: 3mm; padding: 0 0 3.5mm 5mm; }
+  .timeline-company { font-size: 10.5pt; }
+  .timeline-role,.timeline-date { font-size: 8.5pt; }
+}
+</style>
+</head>
+<body>
+<div class="locale" lang="zh-CN" data-locale="zh">
+  <div class="layout">
+    <main class="main-column">
+      <section class="card profile-card" aria-labelledby="zh-name">
+  <div class="profile-cover" aria-hidden="true">
+        <svg class="cover-art" viewBox="0 0 900 140" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <rect width="900" height="140" fill="#dce7ef"/>
+          <path d="M-40 145C135-35 298 200 497 46S813-34 940 64V170H-40Z" fill="#afc9db"/>
+          <path d="M390 150C509 130 557 20 700 20s136 110 246 51v99H390Z" fill="#7eabc9"/>
+          <path d="M604 160c53-40 80-83 152-83s101 57 182 9v80H604Z" fill="#507b9b"/>
+          <g stroke="#ffffff" stroke-opacity=".48" fill="none" stroke-width="1.1"><path d="M395 103h116l45-52h157l67 44h130"/><circle cx="511" cy="103" r="4"/><circle cx="556" cy="51" r="4"/><circle cx="713" cy="51" r="4"/><circle cx="780" cy="95" r="4"/></g>
+        </svg>
+      </div>
+  <div class="language-switch" role="group" aria-label="选择语言" hidden>
+    <button type="button" lang="zh-CN" data-language="zh" aria-pressed="true">中文</button>
+    <button type="button" lang="en" data-language="en" aria-pressed="false">English</button>
+  </div>
+  <div class="profile-body">
+    <div class="profile-topline">
+      <div class="avatar" aria-hidden="true">王嘉</div>
+      <div class="affiliation"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8 9-5 9 5-9 5-9-5Z"/><path d="M6 10v7c4 3 8 3 12 0v-7M21 8v8"/></svg><span>中南大学 · 985高校</span></div>
+    </div>
+    <h1 class="profile-name" id="zh-name">王嘉</h1>
+    <p class="headline">数据分析 · 风控策略 · 工程实践</p>
+    <p class="profile-background"><strong>腾讯 · 华为</strong></p>
+    <p class="print-education">中南大学 · 985高校 · 数学与应用数学专业 · 学士学位</p>
+    <p class="profile-intro">以应用数学为基础，从数据处理、指标计算和风险挖掘入手，结合专题分析与 A/B 实验，为业务增长和风险管理提供决策依据。工程实践覆盖图数据平台、机器学习服务、智能调度与 Data Agent。</p>
+    <nav class="profile-links" aria-label="页面跳转">
+      <a href="#zh-analysis">数据分析案例</a>
+      <a href="#zh-engineering">工程实践落地</a>
+      <a href="#zh-experience">工作经历</a>
+    </nav>
+  </div>
+</section>
+      <section class="card personal-card" aria-labelledby="zh-personal-title">
+  <header class="section-heading"><h2 id="zh-personal-title">个人基础信息</h2></header>
+  <dl class="personal-details">
+    <div><dt>出生年月：</dt><dd><time datetime="1990-06">1990年6月</time></dd></div>
+    <div><dt>电话：</dt><dd><a href="tel:+8613692296946">+86 136-9229-6946</a></dd></div>
+    <div><dt>邮箱：</dt><dd><a href="mailto:jettwg07@gmail.com">jettwg07@gmail.com</a></dd></div>
+    <div><dt>专业：</dt><dd>数学与应用数学</dd></div>
+  </dl>
+</section>
+      <section class="card capability" id="zh-analysis" aria-labelledby="zh-analysis-title">
+  <header class="section-heading"><span class="section-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16M8 15l4-5 4 2 4-7"/><path d="M16 5h4v4"/></svg></span><h2 id="zh-analysis-title">数据分析与业务决策</h2></header>
+  <p class="section-intro">从问题拆解、指标计算和人群分层出发，结合监测、归因与对照实验，支持风险控制和增长决策。</p>
+  <div class="projects"><article class="project">
+  <header class="project-heading"><h3>分付信贷策略与增长分析</h3><p class="project-org">腾讯 · 微信支付</p></header>
+  <p class="contribution"><span class="inline-label">个人职责</span>负责贷前准入风控管理，参与已开通用户的额度调整策略和实验分析。</p>
+  <ul class="work">
+<li><strong>筛选与分层</strong> · 结合用户画像、支付行为、征信基础数据及内外部风险标签，筛选可开通人群并划分风险层级，评估扩大覆盖时的风险敞口。</li>
+<li><strong>准入决策</strong> · 利用实时行为标签区分申请阶段和风险等级，分析降额、资方管理调整等方案对开通转化与风险水平的影响。</li>
+<li><strong>调额实验</strong> · 设计实验组与对照组，对比不同调额方案的在贷规模、风险表现与综合收益，优选方案并为策略迭代提供依据。</li>
+<li><strong>专题分析</strong> · 用 SQL 取数和计算指标，用 Python 处理数据与建模。围绕业务变化开展专题归因、风险预估与策略复盘，为准入和调额决策提供依据。</li>
+</ul>
+  <div class="evidence"><span class="evidence-label">项目成果</span><p>服务用户规模 <strong>1亿+</strong>，调额实验提升收益 <strong>50%+</strong>。</p></div>
+</article>
+<article class="project">
+  <header class="project-heading"><h3>多维风险挖掘与业务监测</h3><p class="project-org">腾讯 · 支付与社交风控</p></header>
+  <p class="contribution"><span class="inline-label">个人职责</span>参与风险特征体系、识别模型及监测大盘建设，为风险识别与干预提供分析依据。</p>
+  <ul class="work">
+<li><strong>支付风险识别</strong> · 整合账号基础信息、交易、负反馈和时序特征，在财付通 C2C、C2B 场景落地离线与准实时模型。结合 XGBoost、逻辑回归与社区发现，对可疑账号分级并挖掘团伙线索。</li>
+<li><strong>风险监测与排序</strong> · 建设套现、套码和非法集资等风险大盘，按风险优先级、监管关注度与外部风险规模，使用层次分析法（AHP）评估资源投入。</li>
+<li><strong>社交关系挖掘</strong> · 基于账号、IP 与设备的关联图识别批量养号团伙，并用大盘恶意消息量观察治理效果。</li>
+</ul>
+  <div class="evidence"><span class="evidence-label">项目成果</span><p>养号团伙打击后，大盘恶意消息量下降<strong>超过 60%</strong>，AI 恶意内容识别服务的可识别规模提升<strong>近 3 倍</strong>。</p></div>
+</article>
+<article class="project">
+  <header class="project-heading"><h3>业务知识库与 Data Agent 应用</h3><p class="project-org">腾讯 · 微信支付</p></header>
+  <p class="contribution"><span class="inline-label">个人职责</span>建立并维护数据表与业务知识库，把常用数据和业务口径纳入分析流程。</p>
+  <ul class="work">
+<li><strong>数据定位与口径理解</strong> · 用 Data Agent 辅助定位数据表、理解业务数据和分析常见问题，减少重复查表和口径确认。</li>
+<li><strong>分析交付</strong> · 将查表和业务知识与 SQL 取数、指标计算及 Python 数据处理结合，支持常见问题分析与专题研究。</li>
+</ul>
+  <div class="evidence"><span class="evidence-label">落地成效</span><p>沉淀可复用的表信息和业务知识，提升分析交付效率。</p></div>
+</article></div>
+</section>
+      <section class="card capability" id="zh-engineering" aria-labelledby="zh-engineering-title">
+  <header class="section-heading"><span class="section-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01M11 7h6M11 17h6"/></svg></span><h2 id="zh-engineering-title">工程实践落地</h2></header>
+  <p class="section-intro">建设图数据平台、机器学习服务和智能调度平台，把分析方法部署为可复用的能力。</p>
+  <div class="projects"><article class="project">
+  <header class="project-heading"><h3>星图知识图谱平台</h3><p class="project-org">腾讯 · 腾讯云</p></header>
+  <p class="contribution"><span class="inline-label">个人职责</span>担任整体架构负责人，从零建设统一的图数据存储、检索、计算与展示能力。</p>
+  <ul class="work">
+<li>完成图数据库、图计算及拓扑展示平台建设，负责 Gremlin 检索、属性反查、对外接口及鉴权管理的设计与开发。</li>
+</ul>
+  <div class="evidence"><span class="evidence-label">平台规模</span><p>支撑<strong>百亿级</strong>图存储与<strong>毫秒级</strong>检索，公有云对接 <strong>10+</strong> 外部客户，并参与多家银行项目 POC。</p></div>
+</article>
+<article class="project">
+  <header class="project-heading"><h3>机器学习平台与识别服务</h3><p class="project-org">腾讯 · 社交风控</p></header>
+  <p class="contribution"><span class="inline-label">个人职责</span>建设批量回溯检索、样本与特征处理及自动化模型平台。</p>
+  <ul class="work">
+<li>打通业务自助接入、模型训练和灰度发布流程，将数据处理和识别方法部署为可复用服务，支持海量 UGC 数据检索与干预。</li>
+</ul>
+  <div class="evidence"><span class="evidence-label">业务应用</span><p>平台接入 <strong>20+</strong> 内部 UGC 业务，在保持识别效果的前提下，以少量模型替代原有<strong>上百条规则</strong>。</p></div>
+</article>
+<article class="project">
+  <header class="project-heading"><h3>大数据平台智能调度</h3><p class="project-org">华为 · 网络自动驾驶 ADN</p></header>
+  <p class="contribution"><span class="inline-label">个人职责</span>担任智能调度组 SE，负责智能调度预研与版本落地。</p>
+  <ul class="work">
+<li>完成一期任务调度智能化编排的可行性预研与版本落地，并推进二期多任务编排方案预研。</li>
+</ul>
+  <div class="evidence"><span class="evidence-label">落地成效</span><p><strong>从 0 到 1</strong> 建立智能调度平台，并在客户平台落地，协助客户提升分析效率。</p></div>
+</article></div>
+</section>
+      <section class="card experience-card" id="zh-experience" aria-labelledby="zh-experience-title">
+  <header class="section-heading"><span class="section-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V3h8v4M3 12c6 4 12 4 18 0M10 14h4"/></svg></span><h2 id="zh-experience-title">工作经历</h2></header>
+  <ol class="timeline"><li class="timeline-item">
+  <p class="timeline-date"><time datetime="2023-06">2023.06</time> – 至今</p>
+  <div>
+    <h3 class="timeline-company">腾讯 · 微信支付</h3>
+    <p class="timeline-role">分付信贷风控策略与数据分析</p>
+    <ul class="work">
+<li>作为核心成员及负责人，搭建贷前准入风控框架，推进白名单筛选、风险分层与申请环节差异化处置。</li>
+<li>负责或参与调额实验、业务专题分析与策略复盘，建立业务知识库并将 Data Agent 用于日常分析。</li>
+</ul>
+  </div>
+</li><li class="timeline-item">
+  <p class="timeline-date"><time datetime="2021-07">2021.07</time> – <time datetime="2023-06">2023.06</time></p>
+  <div>
+    <h3 class="timeline-company">腾讯 · 财付通</h3>
+    <p class="timeline-role">支付风控与风险监测</p>
+    <ul class="work">
+<li>面向 C2C、C2B 支付建设风险特征体系及离线、准实时模型，支持反欺诈识别、可疑账号分级和洗钱团伙线索挖掘。</li>
+<li>建设支付合规风险大盘，并用 AHP 模型评估各类风险的投入优先级。</li>
+</ul>
+  </div>
+</li><li class="timeline-item">
+  <p class="timeline-date"><time datetime="2020-06">2020.06</time> – <time datetime="2021-07">2021.07</time></p>
+  <div>
+    <h3 class="timeline-company">华为</h3>
+    <p class="timeline-role">网络自动驾驶 ADN · 大数据平台智能调度</p>
+    <ul class="work">
+<li>担任智能调度组 SE、预研与版本落地负责人，负责需求规划、技术方案预研及架构设计。</li>
+<li>完成一期智能编排并在客户平台落地，协助提升分析效率，推进二期多任务编排方案预研。</li>
+</ul>
+  </div>
+</li><li class="timeline-item">
+  <p class="timeline-date"><time datetime="2019-04">2019.04</time> – <time datetime="2020-06">2020.06</time></p>
+  <div>
+    <h3 class="timeline-company">OPPO</h3>
+    <p class="timeline-role">公司级图数据平台与机器学习平台</p>
+    <ul class="work">
+<li>负责图平台选型与架构，从零建设基于 JanusGraph、HBase 和 Angel-on-Spark 的图存储与图计算平台，支持图检索、路径计算和社区发现。</li>
+<li>推动平台接入推荐、金融、语音助手、运维、元数据管理和知识图谱等业务，并参与公司级机器学习平台建设。</li>
+</ul>
+  </div>
+</li><li class="timeline-item">
+  <p class="timeline-date"><time datetime="2015-10">2015.10</time> – <time datetime="2019-04">2019.04</time></p>
+  <div>
+    <h3 class="timeline-company">腾讯</h3>
+    <p class="timeline-role">腾讯云知识图谱平台与社交风控工程</p>
+    <ul class="work">
+<li>作为整体架构负责人从零建设星图知识图谱平台，覆盖图数据导入、存储、更新、检索、计算和可视化，支持外部客户及银行 POC。</li>
+<li>面向 QQ、QQ 空间和 QQ 音乐的 UGC 数据，建设批量回溯检索、样本特征流水线及自助训练和灰度发布能力，支持团伙挖掘与恶意内容识别。</li>
+</ul>
+  </div>
+</li><li class="timeline-item">
+  <p class="timeline-date"><time datetime="2011-07">2011.07</time> – <time datetime="2015-09">2015.09</time></p>
+  <div>
+    <h3 class="timeline-company">轨道交通信号系统创业公司</h3>
+    <p class="timeline-role">车辆路径控制与实时系统</p>
+    <ul class="work">
+<li>以 C 语言开发车辆路径控制模块和底层 I/O 服务，参与建设三取二冗余实时控制系统。</li>
+<li>作为主要参与人推动信号系统通过 TÜV SIL 安全认证。</li>
+</ul>
+  </div>
+</li></ol>
+</section>
+    </main>
+    <aside class="side-column" aria-label="教育背景与专业能力概览">
+  <section class="card side-card education-card" aria-labelledby="zh-education-title">
+    <h2 id="zh-education-title">教育背景</h2>
+    <div class="education-details">
+      <div class="education-identity"><span class="school-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8 9-5 9 5-9 5-9-5Z"/><path d="M6 10v7c4 3 8 3 12 0v-7M21 8v8"/></svg></span><div><h3 class="school-name">中南大学</h3><span class="school-badge">985高校</span></div></div>
+      <div><p class="school-major">数学与应用数学专业</p><p class="school-degree">学士学位</p><p class="education-period"><time datetime="2007-09">2007.09</time> – <time datetime="2011-06">2011.06</time></p></div>
+    </div>
+  </section>
+  <section class="card side-card highlights-card" aria-labelledby="zh-highlights-title">
+    <h2 id="zh-highlights-title">代表成果</h2>
+    <div class="proof-items"><div class="proof-item"><p class="proof-value">1亿+</p><p class="proof-description">信贷平台服务用户规模<span class="proof-context">分付 · 贷前风控</span></p></div>
+<div class="proof-item"><p class="proof-value">百亿级</p><p class="proof-description">图存储与毫秒级检索<span class="proof-context">腾讯云 · 星图知识图谱</span></p></div>
+<div class="proof-item"><p class="proof-value">20+</p><p class="proof-description">内部 UGC 业务接入<span class="proof-context">自动化模型平台</span></p></div></div>
+  </section>
+  <section class="card side-card skills-card" aria-labelledby="zh-skills-title">
+    <h2 id="zh-skills-title">专业技能</h2>
+    <div class="skill-group"><h3>数据分析与业务决策</h3><ul class="skills"><li>SQL</li><li>Python</li><li>指标与监测</li><li>风险分层</li><li>A/B 实验</li><li>专题归因</li></ul></div>
+<div class="skill-group"><h3>工程建设与应用交付</h3><ul class="skills"><li>知识图谱</li><li>机器学习平台</li><li>Data Agent</li><li>数据处理</li></ul></div>
+  </section>
+</aside>
+  </div>
+  <footer class="page-footer"><span>王嘉 · 数据分析与工程实践</span><a href="#" class="back-top">返回顶部<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20V4m-6 6 6-6 6 6"/></svg></a></footer>
+</div>
+<div class="locale" lang="en" data-locale="en" hidden>
+  <div class="layout">
+    <main class="main-column">
+      <section class="card profile-card" aria-labelledby="en-name">
+  <div class="profile-cover" aria-hidden="true">
+        <svg class="cover-art" viewBox="0 0 900 140" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <rect width="900" height="140" fill="#dce7ef"/>
+          <path d="M-40 145C135-35 298 200 497 46S813-34 940 64V170H-40Z" fill="#afc9db"/>
+          <path d="M390 150C509 130 557 20 700 20s136 110 246 51v99H390Z" fill="#7eabc9"/>
+          <path d="M604 160c53-40 80-83 152-83s101 57 182 9v80H604Z" fill="#507b9b"/>
+          <g stroke="#ffffff" stroke-opacity=".48" fill="none" stroke-width="1.1"><path d="M395 103h116l45-52h157l67 44h130"/><circle cx="511" cy="103" r="4"/><circle cx="556" cy="51" r="4"/><circle cx="713" cy="51" r="4"/><circle cx="780" cy="95" r="4"/></g>
+        </svg>
+      </div>
+  <div class="language-switch" role="group" aria-label="Choose language" hidden>
+    <button type="button" lang="zh-CN" data-language="zh" aria-pressed="false">中文</button>
+    <button type="button" lang="en" data-language="en" aria-pressed="true">English</button>
+  </div>
+  <div class="profile-body">
+    <div class="profile-topline">
+      <div class="avatar" aria-hidden="true">JW</div>
+      <div class="affiliation"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8 9-5 9 5-9 5-9-5Z"/><path d="M6 10v7c4 3 8 3 12 0v-7M21 8v8"/></svg><span>Central South University · Project 985</span></div>
+    </div>
+    <h1 class="profile-name" id="en-name">Jia Wang</h1>
+    <p class="headline">Data analysis · Risk strategy · Engineering delivery</p>
+    <p class="profile-background"><strong>Tencent · Huawei</strong></p>
+    <p class="print-education">Central South University · Project 985 · Bachelor’s degree in Mathematics and Applied Mathematics</p>
+    <p class="profile-intro">With a background in applied mathematics, I use data processing, metrics, risk analysis and A/B experiments to inform growth and risk decisions. My engineering experience spans graph data platforms, machine learning services, intelligent scheduling and Data Agent applications.</p>
+    <nav class="profile-links" aria-label="Page navigation">
+      <a href="#en-analysis">Data analysis cases</a>
+      <a href="#en-engineering">Engineering delivery</a>
+      <a href="#en-experience">Work experience</a>
+    </nav>
+  </div>
+</section>
+      <section class="card personal-card" aria-labelledby="en-personal-title">
+  <header class="section-heading"><h2 id="en-personal-title">Personal information</h2></header>
+  <dl class="personal-details">
+    <div><dt>Date of birth:</dt><dd><time datetime="1990-06">June 1990</time></dd></div>
+    <div><dt>Phone:</dt><dd><a href="tel:+8613692296946">+86 136-9229-6946</a></dd></div>
+    <div><dt>Email:</dt><dd><a href="mailto:jettwg07@gmail.com">jettwg07@gmail.com</a></dd></div>
+    <div><dt>Major:</dt><dd>Mathematics and Applied Mathematics</dd></div>
+  </dl>
+</section>
+      <section class="card capability" id="en-analysis" aria-labelledby="en-analysis-title">
+  <header class="section-heading"><span class="section-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16M8 15l4-5 4 2 4-7"/><path d="M16 5h4v4"/></svg></span><h2 id="en-analysis-title">Data analysis and business decisions</h2></header>
+  <p class="section-intro">Defined business questions and metrics, segmented users and combined monitoring, diagnosis and controlled experiments to inform risk and growth decisions.</p>
+  <div class="projects"><article class="project">
+  <header class="project-heading"><h3>Fenfu credit strategy and growth analysis</h3><p class="project-org">Tencent · WeChat Pay</p></header>
+  <p class="contribution"><span class="inline-label">Role</span>Led pre-credit eligibility risk management and contributed to credit limit strategies and experiment analysis for existing users.</p>
+  <ul class="work">
+<li><strong>Eligibility and risk segmentation</strong> · Combined user profiles, payment behavior, credit bureau data and internal and external risk indicators to screen eligible users, define risk tiers and assess exposure as coverage expanded.</li>
+<li><strong>Application decisions</strong> · Used real-time behavioral indicators to segment applications by stage and risk tier, assessing how lower limits and funding partner adjustments affected activation and risk.</li>
+<li><strong>Credit limit experiments</strong> · Designed treatment and control groups to compare outstanding credit balances, risk and overall returns across limit-adjustment strategies and inform the next policy iteration.</li>
+<li><strong>Focused business analysis</strong> · Used SQL to extract data and compute metrics, and Python for data preparation and modeling. Investigated business changes, estimated risk and reviewed policy performance to guide eligibility and limit decisions.</li>
+</ul>
+  <div class="evidence"><span class="evidence-label">Impact</span><p>Served <strong>100M+</strong> users. A credit limit adjustment experiment increased returns by <strong>50%+</strong>.</p></div>
+</article>
+<article class="project">
+  <header class="project-heading"><h3>Payment and social risk analysis</h3><p class="project-org">Tencent · Payment and social risk</p></header>
+  <p class="contribution"><span class="inline-label">Role</span>Contributed to risk features, detection models and monitoring dashboards to support risk identification and intervention.</p>
+  <ul class="work">
+<li><strong>Payment risk detection</strong> · Combined account, transaction, negative feedback and temporal features in offline and near-real-time models for Tenpay C2C and C2B payments. Used XGBoost, logistic regression and community detection to rank suspicious accounts and identify potential groups.</li>
+<li><strong>Monitoring and prioritization</strong> · Built dashboards for cash-out abuse, merchant category misuse and illegal fundraising. Used the analytic hierarchy process (AHP) to assess resource allocation based on risk priority, regulatory attention and external risk scale.</li>
+<li><strong>Social graph analysis</strong> · Used graphs linking accounts, IP addresses and devices to identify groups farming accounts at scale, then monitored platform-wide malicious message volume after intervention.</li>
+</ul>
+  <div class="evidence"><span class="evidence-label">Impact</span><p>Platform-wide malicious message volume fell by <strong>more than 60%</strong> following action against account-farming groups. The AI detection service increased the scale of content it could identify by <strong>nearly threefold</strong>.</p></div>
+</article>
+<article class="project">
+  <header class="project-heading"><h3>Business knowledge base and Data Agent</h3><p class="project-org">Tencent · WeChat Pay</p></header>
+  <p class="contribution"><span class="inline-label">Role</span>Built and maintained a knowledge base of data tables and business definitions for recurring analysis.</p>
+  <ul class="work">
+<li><strong>Data discovery and definitions</strong> · Used Data Agent to locate tables, interpret business data and investigate common questions, reducing repeated table lookups and definition checks.</li>
+<li><strong>Analysis delivery</strong> · Combined data discovery and business context with SQL extraction and metric calculation, plus Python data processing, to support recurring questions and focused investigations.</li>
+</ul>
+  <div class="evidence"><span class="evidence-label">Impact</span><p>Made table information and business knowledge reusable across analyses, improving delivery efficiency.</p></div>
+</article></div>
+</section>
+      <section class="card capability" id="en-engineering" aria-labelledby="en-engineering-title">
+  <header class="section-heading"><span class="section-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01M11 7h6M11 17h6"/></svg></span><h2 id="en-engineering-title">Engineering delivery</h2></header>
+  <p class="section-intro">Built graph data platforms, machine learning services and intelligent scheduling systems to make analytical methods reusable in production.</p>
+  <div class="projects"><article class="project">
+  <header class="project-heading"><h3>Xingtu knowledge graph platform</h3><p class="project-org">Tencent · Tencent Cloud</p></header>
+  <p class="contribution"><span class="inline-label">Role</span>Led the architecture and built a unified platform for graph data storage, retrieval, computation and visualization.</p>
+  <ul class="work">
+<li>Built the graph database, compute and topology visualization platform, and designed and implemented Gremlin queries, reverse property lookup, external APIs and access control.</li>
+</ul>
+  <div class="evidence"><span class="evidence-label">Scale</span><p>Supported graph storage at the <strong>10-billion scale</strong> and <strong>millisecond</strong> retrieval. Served <strong>10+</strong> external cloud customers and contributed to proofs of concept with multiple banks.</p></div>
+</article>
+<article class="project">
+  <header class="project-heading"><h3>Machine learning platform and detection services</h3><p class="project-org">Tencent · Social risk</p></header>
+  <p class="contribution"><span class="inline-label">Role</span>Built batch historical search, sample and feature processing, and automated modeling tools.</p>
+  <ul class="work">
+<li>Connected self-service onboarding, model training and staged release, turning data processing and detection methods into reusable services for search and intervention across large UGC datasets.</li>
+</ul>
+  <div class="evidence"><span class="evidence-label">Adoption</span><p>Onboarded <strong>20+</strong> internal UGC products and replaced <strong>over 100 rules</strong> with a small set of models while maintaining detection performance.</p></div>
+</article>
+<article class="project">
+  <header class="project-heading"><h3>Intelligent data platform scheduling</h3><p class="project-org">Huawei · Autonomous Driving Network</p></header>
+  <p class="contribution"><span class="inline-label">Role</span>Served as systems engineer and led technical evaluation and delivery for intelligent scheduling.</p>
+  <ul class="work">
+<li>Evaluated and delivered first-phase intelligent task orchestration, and advanced technical research for multi-task orchestration in phase two.</li>
+</ul>
+  <div class="evidence"><span class="evidence-label">Impact</span><p>Built the intelligent scheduling platform <strong>from the ground up</strong> and deployed it on a customer platform to improve analysis efficiency.</p></div>
+</article></div>
+</section>
+      <section class="card experience-card" id="en-experience" aria-labelledby="en-experience-title">
+  <header class="section-heading"><span class="section-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V3h8v4M3 12c6 4 12 4 18 0M10 14h4"/></svg></span><h2 id="en-experience-title">Work experience</h2></header>
+  <ol class="timeline"><li class="timeline-item">
+  <p class="timeline-date"><time datetime="2023-06">2023.06</time> – Present</p>
+  <div>
+    <h3 class="timeline-company">Tencent · WeChat Pay</h3>
+    <p class="timeline-role">Fenfu credit risk strategy and analytics</p>
+    <ul class="work">
+<li>Led the development of the pre-credit eligibility framework, including whitelist screening, risk segmentation and differentiated application decisions.</li>
+<li>Led or contributed to limit experiments, business investigations and policy reviews. Built a business knowledge base and incorporated Data Agent into daily analysis.</li>
+</ul>
+  </div>
+</li><li class="timeline-item">
+  <p class="timeline-date"><time datetime="2021-07">2021.07</time> – <time datetime="2023-06">2023.06</time></p>
+  <div>
+    <h3 class="timeline-company">Tencent · Tenpay</h3>
+    <p class="timeline-role">Payment risk and monitoring</p>
+    <ul class="work">
+<li>Built risk features and offline and near-real-time models for C2C and C2B payments, supporting fraud detection, suspicious account scoring and money laundering investigations.</li>
+<li>Built payment compliance dashboards and applied AHP to prioritize resources across risk categories.</li>
+</ul>
+  </div>
+</li><li class="timeline-item">
+  <p class="timeline-date"><time datetime="2020-06">2020.06</time> – <time datetime="2021-07">2021.07</time></p>
+  <div>
+    <h3 class="timeline-company">Huawei</h3>
+    <p class="timeline-role">Autonomous Driving Network (ADN) · Data platform scheduling</p>
+    <ul class="work">
+<li>Served as systems engineer and led feasibility work and release delivery, covering requirements, technical evaluation and architecture.</li>
+<li>Delivered first-phase intelligent orchestration to a customer platform to improve analysis efficiency, and advanced feasibility work for multi-task orchestration.</li>
+</ul>
+  </div>
+</li><li class="timeline-item">
+  <p class="timeline-date"><time datetime="2019-04">2019.04</time> – <time datetime="2020-06">2020.06</time></p>
+  <div>
+    <h3 class="timeline-company">OPPO</h3>
+    <p class="timeline-role">Enterprise graph data and machine learning platforms</p>
+    <ul class="work">
+<li>Led technology selection and architecture, building graph storage and computation from the ground up with JanusGraph, HBase and Angel-on-Spark to support graph queries, path analysis and community detection.</li>
+<li>Integrated the platform with recommendations, finance, voice assistant, operations, metadata and knowledge graph applications, and contributed to the enterprise machine learning platform.</li>
+</ul>
+  </div>
+</li><li class="timeline-item">
+  <p class="timeline-date"><time datetime="2015-10">2015.10</time> – <time datetime="2019-04">2019.04</time></p>
+  <div>
+    <h3 class="timeline-company">Tencent</h3>
+    <p class="timeline-role">Tencent Cloud knowledge graphs and social risk engineering</p>
+    <ul class="work">
+<li>Led architecture for the Xingtu knowledge graph platform, covering ingestion, storage, updates, retrieval, computation and visualization for external customers and bank proofs of concept.</li>
+<li>Built batch historical search, sample and feature pipelines, self-service training and staged rollouts for user-generated content across QQ, Qzone and QQ Music. The tooling supported group detection and harmful content identification.</li>
+</ul>
+  </div>
+</li><li class="timeline-item">
+  <p class="timeline-date"><time datetime="2011-07">2011.07</time> – <time datetime="2015-09">2015.09</time></p>
+  <div>
+    <h3 class="timeline-company">Rail signaling startup</h3>
+    <p class="timeline-role">Train route control and real-time systems</p>
+    <ul class="work">
+<li>Developed train route control and low-level I/O services in C and contributed to a real-time control system with two-out-of-three voting.</li>
+<li>Contributed to the signaling system’s successful TÜV safety integrity level (SIL) certification.</li>
+</ul>
+  </div>
+</li></ol>
+</section>
+    </main>
+    <aside class="side-column" aria-label="Education and professional highlights">
+  <section class="card side-card education-card" aria-labelledby="en-education-title">
+    <h2 id="en-education-title">Education</h2>
+    <div class="education-details">
+      <div class="education-identity"><span class="school-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8 9-5 9 5-9 5-9-5Z"/><path d="M6 10v7c4 3 8 3 12 0v-7M21 8v8"/></svg></span><div><h3 class="school-name">Central South University</h3><span class="school-badge">Project 985</span></div></div>
+      <div><p class="school-major">Mathematics and Applied Mathematics</p><p class="school-degree">Bachelor’s degree</p><p class="education-period"><time datetime="2007-09">2007.09</time> – <time datetime="2011-06">2011.06</time></p></div>
+    </div>
+  </section>
+  <section class="card side-card highlights-card" aria-labelledby="en-highlights-title">
+    <h2 id="en-highlights-title">Selected results</h2>
+    <div class="proof-items"><div class="proof-item"><p class="proof-value">100M+</p><p class="proof-description">Users served by the credit platform<span class="proof-context">Fenfu · Credit eligibility</span></p></div>
+<div class="proof-item"><p class="proof-value">10B scale</p><p class="proof-description">Graph storage with millisecond retrieval<span class="proof-context">Tencent Cloud · Xingtu</span></p></div>
+<div class="proof-item"><p class="proof-value">20+</p><p class="proof-description">Internal UGC products onboarded<span class="proof-context">Automated modeling platform</span></p></div></div>
+  </section>
+  <section class="card side-card skills-card" aria-labelledby="en-skills-title">
+    <h2 id="en-skills-title">Skills</h2>
+    <div class="skill-group"><h3>Data analysis and business decisions</h3><ul class="skills"><li>SQL</li><li>Python</li><li>Metrics and monitoring</li><li>Risk segmentation</li><li>A/B testing</li><li>Root-cause analysis</li></ul></div>
+<div class="skill-group"><h3>Engineering and delivery</h3><ul class="skills"><li>Knowledge graphs</li><li>ML platforms</li><li>Data Agent</li><li>Data processing</li></ul></div>
+  </section>
+</aside>
+  </div>
+  <footer class="page-footer"><span>Jia Wang · Data analysis and engineering</span><a href="#" class="back-top">Back to top<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20V4m-6 6 6-6 6 6"/></svg></a></footer>
+</div>
+<script>
+(() => {
+  const views = new Map(
+    Array.from(document.querySelectorAll('[data-locale]'), view => [view.dataset.locale, view])
+  );
+  const buttons = document.querySelectorAll('[data-language]');
+  const preferenceKey = 'jw-profile-v3-language';
+  const titles = {
+    zh: '王嘉 · 专业能力与工作经历',
+    en: 'Jia Wang · Professional Profile'
+  };
+
+  function showLanguage(language) {
+    const active = views.get(language);
+    for (const view of views.values()) {
+      view.hidden = view !== active;
+    }
+    for (const button of buttons) {
+      button.setAttribute('aria-pressed', String(button.dataset.language === language));
+    }
+    document.documentElement.lang = active.lang;
+    document.title = titles[language];
+    return active;
+  }
+
+  let language = 'zh';
+  try {
+    const saved = localStorage.getItem(preferenceKey);
+    if (views.has(saved)) language = saved;
+  } catch {
+    // The language switch still works when the browser disables local storage.
+  }
+  for (const button of buttons) {
+    button.addEventListener('click', () => {
+      const selected = button.dataset.language;
+      const active = showLanguage(selected);
+      active.querySelector('[aria-pressed="true"]').focus({preventScroll: true});
+      try {
+        localStorage.setItem(preferenceKey, selected);
+      } catch {
+        // Keep the current selection for this visit.
+      }
+    });
+  }
+  showLanguage(language);
+  for (const group of document.querySelectorAll('.language-switch')) group.hidden = false;
+})();
+</script>
+</body>
+</html>
