@@ -35,11 +35,10 @@ strong { color: var(--ink); font-weight: 600; }
 .profile-cover { height: 112px; background: #dbe7ef; overflow: hidden; position: relative; }
 .cover-art { height: 100%; width: 100%; display: block; }
 .profile-body { padding: 0 26px 24px; }
-.profile-topline { display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; position: relative; margin-top: -38px; }
-.avatar { height: 84px; width: 84px; border: 4px solid white; border-radius: 50%; background: #edf4f8; color: #436377; display: grid; place-items: center; font-size: 31px; font-weight: 500; flex: none; box-shadow: 0 0 0 1px #dbe2e7; }
-.affiliation { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 13px; color: var(--text); }
+.profile-topline { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 3px 16px; padding-top: 16px; }
+.affiliation { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text); }
 .affiliation .icon { width: 18px; height: 18px; color: #6f7f89; }
-.profile-name { font-size: 28px; line-height: 1.4; font-weight: 600; letter-spacing: .025em; margin-top: 11px; }
+.profile-name { font-size: 28px; line-height: 1.4; font-weight: 600; letter-spacing: .025em; }
 .headline { font-size: 16px; color: #323a41; line-height: 1.6; margin-top: 3px; }
 .profile-background { display: flex; align-items: center; flex-wrap: wrap; gap: 7px 12px; margin-top: 9px; color: var(--muted); font-size: 13px; }
 .profile-background strong { color: var(--blue); font-weight: 500; }
@@ -120,11 +119,9 @@ strong { color: var(--ink); font-weight: 600; }
   .card { border-radius: 8px; }
   .profile-cover { height: 91px; }
   .profile-body { padding: 0 18px 20px; }
-  .profile-topline { margin-top: -32px; gap: 12px; }
-  .avatar { width: 73px; height: 73px; font-size: 28px; }
   .affiliation { font-size: 12px; gap: 5px; }
   .affiliation .icon { width: 16px; height: 16px; }
-  .profile-name { font-size: 26px; margin-top: 8px; }
+  .profile-name { font-size: 26px; }
   .headline { font-size: 15px; }
   .profile-background { font-size: 12px; gap: 5px 9px; }
   .profile-intro { margin-top: 12px; }
@@ -162,10 +159,11 @@ strong { color: var(--ink); font-weight: 600; }
 @media print {
   html { scroll-behavior: auto; }
   body { background: white; color: #25292d; font-size: 9.5pt; line-height: 1.6; }
-  .side-column,.page-footer,.profile-cover,.profile-topline { display: none !important; }
+  .side-column,.page-footer,.profile-cover,.affiliation { display: none !important; }
   .layout,.main-column { display: block; max-width: none; margin: 0; padding: 0; }
   .card { border: 0; border-radius: 0; overflow: visible; }
   .profile-body { padding: 0 0 5mm; border-bottom: 1px solid #b9cddd; }
+  .profile-topline { display: block; padding-top: 0; }
   .profile-name { font-size: 22pt; margin: 0; }
   .headline { font-size: 11pt; margin-top: 1mm; }
   .profile-background { display: none; }
@@ -214,8 +212,10 @@ strong { color: var(--ink); font-weight: 600; }
         </svg>
       </div>
       <div class="profile-body">
-        <div class="profile-topline"><div class="avatar" aria-hidden="true">王嘉</div><div class="affiliation"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8 9-5 9 5-9 5-9-5Z"/><path d="M6 10v7c4 3 8 3 12 0v-7M21 8v8"/></svg><span>中南大学 · 985高校</span></div></div>
-        <h1 class="profile-name" id="profile-name">王嘉</h1>
+        <div class="profile-topline">
+          <h1 class="profile-name" id="profile-name">王嘉</h1>
+          <div class="affiliation"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8 9-5 9 5-9 5-9-5Z"/><path d="M6 10v7c4 3 8 3 12 0v-7M21 8v8"/></svg><span>中南大学 · 985高校</span></div>
+        </div>
         <p class="headline">数据分析处理 · 工程实践落地</p>
         <p class="profile-background"><strong>腾讯 9年+</strong><span class="dot" aria-hidden="true"></span><strong>华为 2年</strong><span class="dot" aria-hidden="true"></span><span>应用数学背景</span></p>
         <p class="print-education">中南大学 · 985高校 · 数学与应用数学专业 · 学士学位</p>
